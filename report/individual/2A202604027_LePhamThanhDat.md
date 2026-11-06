@@ -16,7 +16,16 @@
 
 ## 2. Kết quả chính
 
-*Chép bảng so sánh cuối Phần 5 (F1 test, F1 SUB 40, p95 ms/tin, USD/1k tin) của chính bạn.*
+| Mô hình | F1 test | F1 SUB 40 | p95 (ms/tin) | USD/1k tin |
+|---|---:|---:|---:|---:|
+| BoW + LogReg | 0.873 | 0.857 | 0.108 | 0 |
+| BoW + MLP | 0.943 | 0.947 | 0.396 | 0 |
+| Encoder + kNN | 0.921 | 0.947 | 49.671 | 0 |
+| Encoder + LogReg | 0.972 | 0.974 | 32.916 | 0 |
+| Encoder + MLP head | 0.972 | 0.974 | 49.208 | 0 |
+| LLM nhỏ zero-shot | 1.000* | 1.000 | 865.475 | 23383.333* |
+| LLM lớn zero-shot | 1.000* | 1.000 | 3586.871 | 55125.000* |
+| LLM nhỏ few-shot | 1.000* | 1.000 | 882.673 | 58583.333* |
 
 ## 3. Dự đoán và thực tế
 
